@@ -1,4 +1,10 @@
+import { useState } from 'react';
+
 const Table = (): JSX.Element => {
+  const [active, setActive] = useState(-1);
+  function handleOpen(id: number) {
+    setActive(id);
+  }
   const reports = [
     {
       name: 'Stolen Card',
@@ -51,23 +57,37 @@ const Table = (): JSX.Element => {
               <tbody>
                 {reports?.map((report: any, idx: number) => {
                   return (
-                    <tr
-                      className="border-b transition duration-300 ease-in-out hover:bg-gray-100 dark:border-gray-500 dark:hover:bg-gray-100"
-                      key={idx}
-                    >
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
-                        {idx + 1}
-                      </td>
-                      <td className="whitespace-nowrap px-6 py-4">
-                        {report.name}
-                      </td>
-                      <td className="whitespace-nowrap px-6 py-4">
-                        {report.status}
-                      </td>
-                      <td className="whitespace-nowrap px-6 py-4">
-                        {report.date}
-                      </td>
-                    </tr>
+                    <>
+                      <tr
+                        className={`${
+                          active === idx + 1 && 'bg-gray'
+                        } border-b transition duration-300 ease-in-out hover:bg-gray-100 dark:border dark:hover:bg-gray cursor-pointer`}
+                        key={idx}
+                        onClick={() => handleOpen(idx + 1)}
+                      >
+                        <td className="whitespace-nowrap px-6 py-4 font-medium">
+                          {idx + 1}
+                        </td>
+                        <td className="whitespace-nowrap px-6 py-4">
+                          {report.name}
+                        </td>
+                        <td className="whitespace-nowrap px-6 py-4">
+                          {report.status}
+                        </td>
+                        <td className="whitespace-nowrap px-6 py-4">
+                          {report.date}
+                        </td>
+                      </tr>
+
+                      <div className={`${active !== idx + 1 && 'hidden'} p-5`}>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Etiam ac leo non massa accumsan suscipit quis et
+                          urna. In hac habitasse platea dictumst. Suspendisse
+                          vitae.
+                        </p>
+                      </div>
+                    </>
                   );
                 })}
               </tbody>
