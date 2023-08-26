@@ -111,12 +111,16 @@ const Table = (): JSX.Element => {
                           active !== idx + 1 && 'hidden'
                         } p-5 items-center absolute`}
                       >
-                        <ProgressBar checkpoints={checkpoints} progress={1} />
-                        <div className="ml-2">
-                          <p className="text-sm text-black">Status: Investigating</p>
-                          <p className="text-xs text-black">
-                            This report is currently being investigated for further details.
-                          </p>
+                        <div className="ml-0 flex flex-row text-center">
+                          <div className="flex flex-col pr-5">
+                            <p className="text-sm text-black">
+                              Status: Investigating
+                            </p>
+                            <p className="text-xs text-black">
+                              Currently being investigated for further details.
+                            </p>
+                          </div>
+                          <ProgressBar checkpoints={checkpoints} progress={1} />
                         </div>
                       </div>
                       <div
