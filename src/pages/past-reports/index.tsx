@@ -1,21 +1,14 @@
-import ProgressBar from "../../components/progress-bar";
-import { NavbarDefault } from "../../components/navbar";
+import Layout from '../../components/layout/Layout';
+import Table from '../../components/table/Table';
+
 const PastReports = (): JSX.Element => {
-    const checkpoints = [
-        'Ticket Created', 'Investigated', 'Esclalation', 'Resolution', 'Complete'
-      ];
-    
+  return (
+    <Layout>
+      <div className="p-20">
+        <Table />
+      </div>
+    </Layout>
+  );
+};
 
-
-
-    return <div>
-        <NavbarDefault></NavbarDefault>
-        <h1>
-            hello
-        </h1>
-        <ProgressBar checkpoints={checkpoints} progress={2}/>
-    </div>;
-  };
-  
-  export default PastReports;
-  
+export default PastReports;
