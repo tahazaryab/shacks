@@ -85,7 +85,7 @@ export function NavbarDefault() {
           size="lg"
           className="hidden lg:inline-block"
           onClick={() => {
-            handleClick('/login');
+            handleClick('/');
           }}
         >
           <span className="text-black hover:font-bold text-lg">Log Out</span>

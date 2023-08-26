@@ -1,7 +1,13 @@
 import bot_pic from './scotia_bot.png';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Layout from '../../components/layout/Layout';
 
 const SubmitReport = (): JSX.Element => {
+
+
+  const navigate = useNavigate()
+
 
   const [question_increment, increase_question_increment] = useState(0)
   const [showSpinner, setShowSpinner] = useState(false)
@@ -47,7 +53,8 @@ const SubmitReport = (): JSX.Element => {
   }
 
   return (
-    <div className="h-screen flex flex-col items-center border-2 border-red-300">
+    <Layout>
+      <div className="h-screen flex flex-col items-center border-2 border-red-300">
       <h2 className="font-bold text-4xl text-red-100 mt-10">Submit a Fraud Report</h2>
       <h3 className="m-4">
         Hi! I'm the Scotiabank Chatbot! Please enter responses to my questions either in the text box below, or press the button to talk!
@@ -165,17 +172,16 @@ const SubmitReport = (): JSX.Element => {
           </div>
         </div>
       ) : 
-      <a href='localhost:3000/my-reports'>
-        <button className='font-bold shadow-xl rounded-full p-5 bg-red-100 hover:bg-red-700 text-white'>My Reports</button>
-      </a>
+
+      <button className='font-bold shadow-xl rounded-full p-5 bg-red-100 hover:bg-red-700 text-white' onClick={() => navigate('/my-reports')}>My Reports</button>
       }
-
-
-
       <div>
         <p></p>
       </div>
     </div>
+
+    </Layout>
+    
   );
 };
 
