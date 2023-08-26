@@ -1,4 +1,5 @@
 import ProgressBar from "../../components/progress-bar";
+import { NavbarDefault } from "../../components/navbar";
 const PastReports = (): JSX.Element => {
     const checkpoints = [
         'Ticket Created', 'Investigated', 'Esclalation', 'Resolution', 'Complete'
@@ -8,6 +9,7 @@ const PastReports = (): JSX.Element => {
 
 
     return <div>
+        <NavbarDefault></NavbarDefault>
         <h1>
             hello
         </h1>
