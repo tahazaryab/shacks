@@ -112,15 +112,20 @@ const Table = (): JSX.Element => {
                         } p-5 items-center absolute`}
                       >
                         <div className="ml-0 flex flex-row text-center">
-                          <div className="flex flex-col pr-5">
+                          <div className="flex flex-col pr-10">
                             <p className="text-sm text-black">
-                              Status: Investigating
+                              Status: Ticket Created
                             </p>
                             <p className="text-xs text-black">
-                              Currently being investigated for further details.
+                            You're in the queue and are 4th in line.
                             </p>
                           </div>
-                          <ProgressBar checkpoints={checkpoints} progress={1} />
+                          <ProgressBar checkpoints={checkpoints} progress={0} />
+                          <div className="flex items-center text-centerflex-col pl-20">
+                            <p className="text-sm text-black">
+                              ETA: 2 Days
+                            </p>
+                          </div>
                         </div>
                       </div>
                       <div
