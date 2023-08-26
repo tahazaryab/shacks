@@ -1,4 +1,6 @@
+import { useNavigate } from "react-router-dom";
 const Login = (): JSX.Element => {
+    const navigate = useNavigate()
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col justify-center">
             <div className="max-w-md w-full rounded-md border-slate-200 mx-auto mt-4 bg-white p-8 border">
@@ -20,7 +22,7 @@ const Login = (): JSX.Element => {
                         <label htmlFor="" className="ml-2 text-sm text-black">Remember me</label>
                     </div>
                     <div>
-                        <button className="mt-3 w-full py-2 px-4 bg-red-100 hover:bg-red-700 rounded-md text-white font-bold text-base">Sign In</button>
+                        <button className="mt-3 w-full py-2 px-4 bg-red-100 hover:bg-red-700 rounded-md text-white font-bold text-base" onClick={() => navigate('/home')}>Sign In</button>
                     </div>
                     <div>
                         <p className="text-center font-bold text-base text-sky-700 mb-10"><a href="" className="hover:underline underline-offset-3">Need help signing in?</a> &gt;</p>
