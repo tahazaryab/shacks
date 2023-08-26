@@ -34,7 +34,7 @@ const ProgressBar = ({
           </div>
           {index < checkpoints.length - 1 && (
             <div
-              className={`h-0.5 w-16 bg-black ${
+              className={`h-0.5 w-12 bg-black ${
                 progress > index ? 'red-100' : ''
               }`}
             />

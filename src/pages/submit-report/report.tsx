@@ -1,5 +1,5 @@
 import bot_pic from './scotia_bot.png';
-import React, { useState } from 'react';
+import React, { useState, useRef} from 'react';
 import { useNavigate } from 'react-router-dom';
 import Layout from '../../components/layout/Layout';
 
@@ -12,6 +12,13 @@ const SubmitReport = (): JSX.Element => {
   const [question_increment, increase_question_increment] = useState(0)
   const [showSpinner, setShowSpinner] = useState(false)
   const times = [1000, 1800, 900]
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const playAudio = () => {
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
+  };
 
 
   const clickResponse = () => {
@@ -36,7 +43,7 @@ const SubmitReport = (): JSX.Element => {
     }
   };
 
-  const questions = ['What would you like to report today?', 'I\'m so sorry to hear that, for verification purposes, what is your full name and home address?', 'What is the last transaction you made on your card?', 'I have sent an order for your card to be cancelled, a representative should be with you shortly. To check the progress of your report, please visit the My Reports page.']
+  const questions = ['Good afternoon Suhaib, what would you like to report today?', 'I\'m so sorry to hear that, for verification purposes, what is your full name and home address?', 'What is the last transaction you made on your card?', 'I have locked your card and sent a request for it to be cancelled. I have forwarded your request to a representative, who will contact you shortly. To check the progress of your report, please visit the My Reports page. Thank you for using Scotiabank Chatbot, please fill out the optional feedback form to help improve your experience.']
 
   const [showElement, setShowElement] = useState(false);
 
