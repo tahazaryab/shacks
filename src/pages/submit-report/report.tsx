@@ -43,7 +43,7 @@ const SubmitReport = (): JSX.Element => {
     }
   };
 
-  const questions = ['Good afternoon Suhaib, what would you like to report today?', 'I\'m so sorry to hear that, for verification purposes, what is your full name and home address?', 'What is the last transaction you made on your card?', 'I have locked your card and sent a request for it to be cancelled. I have forwarded your request to a representative, who will contact you shortly. To check the progress of your report, please visit the My Reports page. Thank you for using Scotiabank Chatbot, please fill out the optional feedback form to help improve your experience.']
+  const questions = ['Good afternoon Suhaib, what would you like to report today?', 'I\'m so sorry to hear that, for verification purposes, what is your full name and home address?', 'What is the last transaction you made on your card?', 'I have locked your card and sent a request for it to be cancelled. I have forwarded your request to a representative, who will contact you shortly. \nTo check the progress of your report, please visit the My Reports page. Thank you for using Scotiabank Chatbot, please fill out the optional feedback form to help improve your experience.']
 
   const [showElement, setShowElement] = useState(false);
 
@@ -70,8 +70,8 @@ const SubmitReport = (): JSX.Element => {
         <img src={bot_pic} className="m-7 h-[200px]" alt="Scotiabank Bot" />
       </div>
 
-      <div>
-        <p className='my-6'>{questions[question_increment]}</p>
+      <div className='mx-auto max-w-md'>
+        <p className='my-6 text-center'>{questions[question_increment]}</p>
       </div>
     
 
