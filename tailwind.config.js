@@ -12,6 +12,9 @@ export default {
       blue: {
         100: '#004591',
       },
+      green: {
+        100: '#4CAF50',
+      }
     },
     extend: {
       fontFamily: {
