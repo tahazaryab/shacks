@@ -14,7 +14,7 @@ export default {
       },
       green: {
         100: '#4CAF50',
-      }
+      },
     },
     extend: {
       fontFamily: {
