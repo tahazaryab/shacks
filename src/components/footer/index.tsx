@@ -1,5 +1,5 @@
-import { Typography } from "@material-tailwind/react";
- 
+import { Typography } from '@material-tailwind/react';
+
 export function FooterWithLogo() {
   return (
     <footer className="w-full bg-white p-8">

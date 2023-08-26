@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { NavbarDefault } from "../navbar"
+import { NavbarDefault } from '../navbar';
 import { FooterWithLogo } from '../footer';
 
 type LayoutProps = {
@@ -11,7 +11,7 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
     <>
       <NavbarDefault />
       {children}
-      <FooterWithLogo/>
+      <FooterWithLogo />
     </>
   );
 };
