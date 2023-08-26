@@ -54,20 +54,24 @@ const SubmitReport = (): JSX.Element => {
 
   return (
     <Layout>
-      <div className="h-screen flex flex-col items-center">
-      <h2 className="font-bold text-4xl text-red-100 mt-10">Submit a Fraud Report</h2>
-      <h3 className="m-4">
+      <div className="h-screen flex flex-col items-center mt-[-20px] mb-[-30px]">
+      <h2 className="font-bold text-4xl text-red-100">Submit a Fraud Report</h2>
+      <h3 className="mt-2">
         Hi! I'm the Scotiabank Chatbot! Please enter responses to my questions either in the text box below, or press the button to talk!
       </h3>
       <div>
-        <img src={bot_pic} className="m-7 h-56" alt="Scotiabank Bot" />
+        <img src={bot_pic} className="m-7 h-[200px]" alt="Scotiabank Bot" />
       </div>
 
       <div>
-        <p className='mt-7'>{questions[question_increment]}</p>
+        <p className='my-6'>{questions[question_increment]}</p>
       </div>
+    
 
-      <div className="flex justify-center items-center my-5">
+      <div className={`${!showElement && !showSpinner && "hidden"}`}> 
+
+      
+      <div className="flex justify-center items-center mb-6">
         {showElement ? (
         <div className="boxContainer">
           <div className="box box1"></div>
@@ -87,6 +91,7 @@ const SubmitReport = (): JSX.Element => {
           </div>
         </div>
 ):<div className='boxContainer'></div>)}
+      </div>
       </div>
 
       <div>
@@ -135,7 +140,7 @@ const SubmitReport = (): JSX.Element => {
 
       {question_increment !== 3 ? (
         <div className='w-full h-full flex flex-col items-center mb-10'>
-          <div className='mt-10 mb-10'>
+          <div className='mb-10'>
             <button className={`shadow-xl rounded-full p-2 bg-red-100 hover:bg-red-700 ${showElement ? 'bg-red-700':'bg-red-100'}`} onClick={listening}>
               <svg className="w-24 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 7v3a5.006 5.006 0 0 1-5 5H6a5.006 5.006 0 0 1-5-5V7m7 9v3m-3 0h6M7 1h2a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3Z"/>
@@ -179,8 +184,6 @@ const SubmitReport = (): JSX.Element => {
         <p></p>
       </div>
     </div>
-    <div className="h-24"></div>
-
     </Layout>
     
   );
