@@ -5,6 +5,7 @@ export default {
     colors: {
       black: '#1D1D1D',
       white: '#FFFFFF',
+      gray: '#d3d3d3',
       red: {
         100: '#ed0722',
       },
@@ -13,7 +14,7 @@ export default {
       },
       green: {
         100: '#4CAF50',
-      }
+      },
     },
     extend: {
       fontFamily: {
