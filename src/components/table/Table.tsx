@@ -16,48 +16,48 @@ const Table = (): JSX.Element => {
   const reports = [
     {
       name: 'Stolen Card',
-      status: 'Recieved',
-      date: '20 min ago',
+      status: 'Investigating',
+      date: 'a min ago',
     },
     {
       name: 'Lost Card',
-      status: 'Recieved',
-      date: '20 min ago',
+      status: 'Escalation',
+      date: '20 days ago',
+    },
+    {
+      name: 'New Credit Card',
+      status: 'Resolution',
+      date: 'a month ago',
+    },
+    {
+      name: 'Open TFSA account',
+      status: 'Complete',
+      date: '2 months ago',
     },
     {
       name: 'Stolen Card',
-      status: 'Recieved',
-      date: '20 min ago',
+      status: 'Complete',
+      date: '6 months ago',
     },
     {
       name: 'Lost Card',
-      status: 'Recieved',
-      date: '20 min ago',
+      status: 'Complete',
+      date: '1 year ago',
     },
     {
       name: 'Stolen Card',
-      status: 'Recieved',
-      date: '20 min ago',
+      status: 'Complete',
+      date: '2 years ago',
     },
     {
       name: 'Lost Card',
-      status: 'Recieved',
-      date: '20 min ago',
+      status: 'Complete',
+      date: '2 years ago',
     },
     {
       name: 'Stolen Card',
-      status: 'Recieved',
-      date: '20 min ago',
-    },
-    {
-      name: 'Lost Card',
-      status: 'Recieved',
-      date: '20 min ago',
-    },
-    {
-      name: 'Stolen Card',
-      status: 'Recieved',
-      date: '20 min ago',
+      status: 'Complete',
+      date: '2 years ago',
     },
   ];
   return (
@@ -111,7 +111,13 @@ const Table = (): JSX.Element => {
                           active !== idx + 1 && 'hidden'
                         } p-5 items-center absolute`}
                       >
-                        <ProgressBar checkpoints={checkpoints} progress={2} />
+                        <ProgressBar checkpoints={checkpoints} progress={1} />
+                        <div className="ml-2">
+                          <p className="text-sm text-black">Status: Investigating</p>
+                          <p className="text-xs text-black">
+                            This report is currently being investigated for further details.
+                          </p>
+                        </div>
                       </div>
                       <div
                         className={`${
