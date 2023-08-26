@@ -34,8 +34,8 @@ const Main = (): JSX.Element => {
         </div>
     </div>
     
-    <div className="bg-white dark:bg-gray-800 flex-col relative z-20 text-center items-center overflow-hidden ">
-        <div className="container mx-auto px-6 flex relative py-12">
+    <div className="bg-white flex items-center flex-col relative z-20 text-center items-center overflow-hidden ">
+        <div className="container mx-auto px-6 flex flex-col items-center text-center relative py-12">
                 <DefaultTimeline></DefaultTimeline>
         </div>
     </div>
