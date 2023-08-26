@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Main from '../src/pages/main';
+import SubmitReport from './pages/submit-report/report';
 import PastReports from './pages/past-reports';
 import login from './pages/login';
 
