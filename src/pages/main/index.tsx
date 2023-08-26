@@ -1,5 +1,10 @@
+import Layout from '../../components/layout/Layout';
+import { DefaultTimeline } from '../../components/timeline';
 const Main = (): JSX.Element => {
-  return <h2>Test Page</h2>;
+  return <Layout>
+    <DefaultTimeline></DefaultTimeline>
+    
+  </Layout>;
 };
 
 export default Main;
