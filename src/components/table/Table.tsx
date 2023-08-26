@@ -66,7 +66,7 @@ const Table = (): JSX.Element => {
         <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
           <div className="overflow-hidden">
             <table className="min-w-full text-left text-sm font-light border border-gray-100">
-              <thead className="border-b font-medium dark:border-gray-100 bg-red-100 text-white">
+              <thead className="border-b font-medium border-gray-100 bg-red-100 text-white">
                 <tr>
                   <th scope="col" className="px-6 py-4">
                     #
@@ -88,8 +88,8 @@ const Table = (): JSX.Element => {
                     <>
                       <tr
                         className={`${
-                          active === idx + 1 && 'bg-gray'
-                        } border-b transition duration-300 ease-in-out hover:bg-gray-100 dark:border dark:hover:bg-gray cursor-pointer`}
+                          active === idx + 1 && 'bg-gray-100'
+                        } border-b transition duration-300 ease-in-out hover:bg-gray-100 border hover:bg-gray cursor-pointer`}
                         key={idx}
                         onClick={() => handleOpen(idx + 1)}
                       >
