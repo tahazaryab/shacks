@@ -1,5 +1,6 @@
 import bot_pic from './scotia_bot.png';
 import React, { useState } from 'react';
+import Layout from '../../components/layout/Layout';
 
 const SubmitReport = (): JSX.Element => {
 
@@ -47,7 +48,8 @@ const SubmitReport = (): JSX.Element => {
   }
 
   return (
-    <div className="h-screen flex flex-col items-center border-2 border-red-300">
+    <Layout>
+      <div className="h-screen flex flex-col items-center border-2 border-red-300">
       <h2 className="font-bold text-4xl text-red-100 mt-10">Submit a Fraud Report</h2>
       <h3 className="m-4">
         Hi! I'm the Scotiabank Chatbot! Please enter responses to my questions either in the text box below, or press the button to talk!
@@ -176,6 +178,9 @@ const SubmitReport = (): JSX.Element => {
         <p></p>
       </div>
     </div>
+
+    </Layout>
+    
   );
 };
 
