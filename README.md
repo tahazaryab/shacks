@@ -1,6 +1,6 @@
 # SHACKS
 
-TBD
+more info coming soon!
 
 ## Available Scripts
 
@@ -8,6 +8,6 @@ TBD
 
 Runs the app in [http://localhost:3000](http://localhost:3000)
 
-## `npx prettier . --write`
+### `npx prettier . --write`
 
 Formats all files
