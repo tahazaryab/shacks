@@ -66,7 +66,7 @@ const Table = (): JSX.Element => {
         <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
           <div className="overflow-hidden">
             <table className="min-w-full text-left text-sm font-light border border-gray-100">
-              <thead className="border-b font-medium dark:border-gray-100 bg-red-100 text-white">
+              <thead className="border-b font-medium border-gray-100 bg-red-100 text-white">
                 <tr>
                   <th scope="col" className="px-6 py-4">
                     #
@@ -88,8 +88,8 @@ const Table = (): JSX.Element => {
                     <>
                       <tr
                         className={`${
-                          active === idx + 1 && 'bg-gray'
-                        } border-b transition duration-300 ease-in-out hover:bg-gray-100 dark:border dark:hover:bg-gray cursor-pointer`}
+                          active === idx + 1 && 'bg-gray-100'
+                        } border-b transition duration-300 ease-in-out hover:bg-gray-100 border hover:bg-gray cursor-pointer`}
                         key={idx}
                         onClick={() => handleOpen(idx + 1)}
                       >
@@ -112,15 +112,20 @@ const Table = (): JSX.Element => {
                         } p-5 items-center absolute`}
                       >
                         <div className="ml-0 flex flex-row text-center">
-                          <div className="flex flex-col pr-5">
+                          <div className="flex flex-col pr-10">
                             <p className="text-sm text-black">
-                              Status: Investigating
+                              Status: Ticket Created
                             </p>
                             <p className="text-xs text-black">
-                              Currently being investigated for further details.
+                            You're in the queue and are 4th in line.
                             </p>
                           </div>
-                          <ProgressBar checkpoints={checkpoints} progress={1} />
+                          <ProgressBar checkpoints={checkpoints} progress={0} />
+                          <div className="flex items-center text-centerflex-col pl-20">
+                            <p className="text-sm text-black">
+                              ETA: 2 Days
+                            </p>
+                          </div>
                         </div>
                       </div>
                       <div
