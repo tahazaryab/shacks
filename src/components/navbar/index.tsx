@@ -7,7 +7,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 
-import { BrowserRouter, Link, useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom'; 
  
 export function NavbarDefault() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -31,7 +31,7 @@ export function NavbarDefault() {
         className="p-1 font-normal"
       >
         <button type="button" className="flex items-center" onClick={() => handleClick('/home')}>
-          Home
+            <p className="text-black">Home</p>
         </button>
       </Typography>
       <Typography
@@ -41,7 +41,7 @@ export function NavbarDefault() {
         className="p-1 font-normal"
       >
         <button type="button" className="flex items-center" onClick={() => handleClick('/my-reports')}>
-          My Reports
+          <p className="text-black">My Reports</p>
         </button>
       </Typography>
       <Typography
@@ -51,7 +51,7 @@ export function NavbarDefault() {
         className="p-1 font-normal"
       >
          <button type="button" className="flex items-center" onClick={() => handleClick('/submit-report')}>
-          Submit a Report
+            <p className="text-black">Submit a Report</p>
         </button>
       </Typography>
     </ul>
@@ -65,7 +65,7 @@ export function NavbarDefault() {
             </div>
             <div className="hidden lg:block">{navList}</div>
             <Button variant="gradient" size="lg" className="hidden lg:inline-block" onClick={() => {handleClick('/login')}}>
-            <span>Log Out</span>
+            <span className="text-black">Log Out</span>
             </Button>
             <IconButton
             variant="text"
