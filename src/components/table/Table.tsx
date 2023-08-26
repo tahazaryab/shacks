@@ -88,7 +88,7 @@ const Table = (): JSX.Element => {
                     <>
                       <tr
                         className={`${
-                          active === idx + 1 && 'bg-gray'
+                          active === idx + 1 && 'bg-gray-100'
                         } border-b transition duration-300 ease-in-out hover:bg-gray-100 border hover:bg-gray cursor-pointer`}
                         key={idx}
                         onClick={() => handleOpen(idx + 1)}
