@@ -15,7 +15,7 @@ const Login = (): JSX.Element => {
                     </div>
                     <div className="flex items-center border-b border-black py-2">
                         <img src={process.env.PUBLIC_URL + '/assets/lock.png'} className="mx-auto h-7 object-cover" alt="logo" />
-                        <input type="text" className="w-full p-2 border border-gray-300 rounded mt-1 placeholder:text-gray-500 appearance-none bg-transparent border-none text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" placeholder="Password" />
+                        <input type="password" className="w-full p-2 border border-gray-300 rounded mt-1 placeholder:text-gray-500 appearance-none bg-transparent border-none text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" placeholder="Password" />
                     </div>
                     <div className="flex items-center">
                         <input type="checkbox" className="ml-1 my-1 h-5 w-5 text-blue-300 rounded" />
