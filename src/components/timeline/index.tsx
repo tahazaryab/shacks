@@ -10,14 +10,22 @@ import {
    
   export function DefaultTimeline() {
     return (
-      <div className=" items-center w-[32rem]">
+      <div className="text-center flex items-center w-[32rem]">
         <Timeline>
           <TimelineItem>
+          <div className="absolute pt-9 left-[-70px]">
+        <div
+            className="relative w-7 h-7 rounded-full border-2 border-black bg-green-100 border-black'
+            }"
+          >
+          </div>
+
+        </div>
+        <div className="absolute left-[-57px] top-[75px] h-20 border-l-2 border-black"></div> 
             <TimelineConnector />
-            <TimelineHeader className="h-3">
+            <TimelineHeader className="h-3 pb-1">
               <TimelineIcon />
-              <Typography variant="h6" color="blue-gray" className="leading-none">
-                Ticket Created.
+              <Typography variant="h6" color="blue-gray" className="leading-none">Ticket Created.
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
@@ -27,6 +35,15 @@ import {
             </TimelineBody>
           </TimelineItem>
           <TimelineItem>
+        <div className="absolute pt-9 left-[-70px]">
+        <div
+            className="relative w-7 h-7 rounded-full border-2 border-black bg-green-100 border-black'
+            }"
+          >
+          </div>
+
+        </div>
+        <div className="absolute left-[-57px] top-[75px] h-20 border-l-2 border-black"></div> 
             <TimelineConnector />
             <TimelineHeader className="h-3">
               <TimelineIcon />
@@ -41,6 +58,15 @@ import {
             </TimelineBody>
           </TimelineItem>
           <TimelineItem>
+          <div className="absolute pt-9 left-[-70px]">
+        <div
+            className="relative w-7 h-7 rounded-full border-2 border-black bg-green-100 border-black'
+            }"
+          >
+          </div>
+
+        </div>
+        <div className="absolute left-[-57px] top-[75px] h-20 border-l-2 border-black"></div> 
             <TimelineHeader className="h-3">
               <TimelineIcon />
               <Typography variant="h6" color="blue-gray" className="leading-none">
@@ -54,6 +80,15 @@ import {
             </TimelineBody>
           </TimelineItem>
           <TimelineItem>
+          <div className="absolute pt-9 left-[-70px]">
+        <div
+            className="relative w-7 h-7 rounded-full border-2 border-black bg-green-100 border-black'
+            }"
+          >
+          </div>
+
+        </div>
+        <div className="absolute left-[-57px] top-[75px] h-20 border-l-2 border-black"></div> 
             <TimelineHeader className="h-3">
               <TimelineIcon />
               <Typography variant="h6" color="blue-gray" className="leading-none">
@@ -67,6 +102,16 @@ import {
             </TimelineBody>
           </TimelineItem>
           <TimelineItem>
+          <div className="absolute pt-9 left-[-70px]">
+        <div
+            className="relative w-7 h-7 rounded-full border-2 border-black bg-green-100 border-black'
+            }"
+          >
+        
+              <div className="absolute w-6 h-6 border-white border-2 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+          </div>
+
+        </div>
             <TimelineHeader className="h-3">
               <TimelineIcon />
               <Typography variant="h6" color="blue-gray" className="leading-none">
