@@ -16,7 +16,7 @@ const Table = (): JSX.Element => {
   const reports = [
     {
       name: 'Stolen Card',
-      status: 'Investigating',
+      status: 'Ticket Created',
       date: 'a min ago',
     },
     {
@@ -123,7 +123,7 @@ const Table = (): JSX.Element => {
                           <ProgressBar checkpoints={checkpoints} progress={0} />
                           <div className="flex items-center text-centerflex-col pl-20">
                             <p className="text-sm text-black">
-                              ETA: 2 Days
+                              ETA: 5 Days
                             </p>
                           </div>
                         </div>

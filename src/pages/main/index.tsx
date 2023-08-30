@@ -11,9 +11,8 @@ const Main = (): JSX.Element => {
                 <span className="w-20 h-2 bg-gray-800  mb-12">
                 </span>
                 <h1 className="font-bebas-neue uppercase text-6xl sm:text-8xl font-black flex flex-col leading-none text-gray-800">
-                    Report With
-                    <span className="text-5xl sm:text-7xl">
-                    Confidence
+                <span className="text-5xl sm:text-7xl">
+                    Report With Confidence
                     </span>
                 </h1>
                 <p className="text-sm sm:text-base text-black">
