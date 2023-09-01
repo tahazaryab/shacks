@@ -6,6 +6,8 @@ For Scotiabank Hacks 2023, we decided to tackle the theme of sustainability by t
 
 Javascript, React.js, Tailwind CSS
 
+## UI:
+
 <img width="1510" alt="Screen Shot 2023-09-01 at 6 16 58 PM" src="https://github.com/tahazaryab/shacks/assets/66046533/5bad2250-3f23-4b64-a73d-c021d742a8d7">
 
 <img width="1512" alt="Screen Shot 2023-09-01 at 6 17 20 PM" src="https://github.com/tahazaryab/shacks/assets/66046533/6effe7f5-1e9c-42da-b2d7-78ba984958bd">
